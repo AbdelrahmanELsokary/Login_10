@@ -3,15 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root{
+  --Nurude-Brown: #9E896A;
+  --Citrus-Mist: #F8EDDD;
+  --Flagstone: #ACACAC;
+  --white: #fff;
+  --Black: #000;
+}
 .container {
   padding: 15px 0;
   margin: auto;
-}
-body {
-  font-family: "Poppins", serif;
-}
-img {
-  max-width: 100%;
 }
 @media (min-width: 768px) {
   .container {
@@ -27,4 +28,10 @@ img {
   .container {
     width: 1170px;
   }
+}
+body {
+  font-family: "Poppins", serif;
+}
+img {
+  max-width: 100%;
 }
