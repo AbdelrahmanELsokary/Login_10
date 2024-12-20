@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-:root{
+:root {
   --Nurude-Brown: #9E896A;
   --Citrus-Mist: #F8EDDD;
   --Flagstone: #ACACAC;
@@ -11,7 +11,7 @@
   --Black: #000;
 }
 .container {
-  padding: 15px 0;
+  padding:  0 15px;
   margin: auto;
 }
 @media (min-width: 768px) {
@@ -35,17 +35,121 @@ body {
 img {
   max-width: 100%;
 }
-a{
+a {
   text-decoration: none;
 }
 header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: var(--white);
   padding: 20px 0;
 }
 header .container nav {
   text-align: end;
 }
-header .container nav a{
+header .container nav a {
   font-size: 20px;
   font-weight: 600;
   color: var(--Black);
+}
+section .container {
+  height: 100vh ;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-top: 45px;
+}
+section .container .image {
+  height: 100%;
+  z-index: 1;
+}
+section .container .login span {
+  display: block;
+  text-align: center;
+}
+section .container .login .login_register{
+  width: 78%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 83px;
+  background-color: var(--Citrus-Mist);
+  border-radius: 33px;
+  padding: 10px;
+  margin: 20px auto;
+}
+section .container .login .login_register .login{
+  background-color: var(--Nurude-Brown);
+  border-radius: 33px;
+  text-align: center;
+  flex-grow: 1;
+  padding: 10px;
+}
+section .container .login .login_register .login a{
+  color: var(--white);
+}
+section .container .login .login_register .register a{
+  color: var(--Nurude-Brown);
+  padding-right: 70px;
+}
+section .container .login p{
+  padding-top: 25px;
+}
+section .container .login form {
+  padding-top: 30px;
+}
+section .container .login form input {
+  outline: none;
+  border: 1px solid var(--Nurude-Brown);
+  background-color: var(--white);
+  border-radius: 40px;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0 20px 0;
+}
+section .container .login form input::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--Flagstone);
+  padding-left: 10px;
+}
+section .container .login form .forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+section .container .login form .forget .input_check{
+  display: flex;
+  align-items: center;
+}
+section .container .login form .forget .input_check input[type="checkbox"]{
+  width: 15px;
+  margin: 0;
+}
+section .container .login form .forget .input_check label{
+  padding-left: 5px;
+}
+section .container .login form .forget a{
+  color: var(--Black);
+}
+section .container .login form .submit{
+  text-align: end;
+  padding-top: 50px;
+}
+section .container .login form input[type="submit"]{
+  max-width: 232px;
+  background-color: var(--Nurude-Brown);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+}
+@media (max-width:991px) {
+  section .container .image{
+    display: none;
+  }
+  section .container .login{
+    width: 100%;
+  }
 }
