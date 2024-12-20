@@ -60,7 +60,7 @@ section .container {
   gap: 50px;
   padding-top: 45px;
 }
-section .container .image {
+section .container .image img {
   height: 100%;
   z-index: 1;
 }
@@ -73,7 +73,6 @@ section .container .login .login_register{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 83px;
   background-color: var(--Citrus-Mist);
   border-radius: 33px;
   padding: 10px;
@@ -83,7 +82,7 @@ section .container .login .login_register .login{
   background-color: var(--Nurude-Brown);
   border-radius: 33px;
   text-align: center;
-  flex-grow: 1;
+  width: 300px;
   padding: 10px;
 }
 section .container .login .login_register .login a{
@@ -91,7 +90,7 @@ section .container .login .login_register .login a{
 }
 section .container .login .login_register .register a{
   color: var(--Nurude-Brown);
-  padding-right: 70px;
+  padding: 0 70px;
 }
 section .container .login p{
   padding-top: 25px;
